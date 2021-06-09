@@ -16,5 +16,8 @@ def email_parse(verified_email):
 if __name__ == '__main__':
     while True:
         email = input('Введите email:\n')
-        if email_parse(email):
-            print(email_parse(email))
+        try:
+            if email_parse(email):
+                print(email_parse(email))
+        except ValueError as err:
+            print(err)
