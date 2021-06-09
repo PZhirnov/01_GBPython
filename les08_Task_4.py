@@ -26,14 +26,20 @@ def calc_cube(x):
 # Результаты:
 
 # --- 1. Базовое условие c одним значением
-a = calc_cube(5)
+try:
+    a = calc_cube(-5)
+except ValueError as err:
+    print(err)
 # print(*a)
 # 5: <class 'int'>
 # print(calc_cube)  # <function calc_cube at 0x00000229034FFEE0> - результат маскировки
 
 
 # ---- 2. Расширенный вариант
-a = calc_cube(5, 6, 7)
+try:
+    a = calc_cube(5, 6, 7)
+except ValueError as err:
+    print(err)
 # 5: <class 'int'>, 6: <class 'int'>, 7: <class 'int'>
 # Результаты расчета: 125, 216, 343
 
