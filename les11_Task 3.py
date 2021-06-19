@@ -7,7 +7,7 @@ class OwnError(Exception):
         try:
             list_val.append(float(num))
         except:
-            pass
+            print("Вы ввели не число!")
 
 
 while True:
