@@ -1,4 +1,4 @@
-
+# Вариант расчета без complex()
 
 class ComplexNum:
 
